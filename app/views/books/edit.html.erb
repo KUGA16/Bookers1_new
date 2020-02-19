@@ -1,2 +1,18 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<h2>Editing Book</h2>
+
+<%= form_for @book do |f| %>
+  <div>
+    <%= f.label :Title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :Body %><br>
+    <%= f.text_area :body %><br>
+  </div>
+  <%= f.submit %>
+<% end %>
+
+<div>
+  <%= link_to 'Show', book_path(@book) %>|
+  <%= link_to 'Back', books_path %>
+</div>
