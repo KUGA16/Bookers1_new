@@ -20,9 +20,13 @@
 
   <h2>New Book</h2>
   <%= form_for @book do |f| %>
-    <h4>title</h4>
+    <div>
+      <%= f.label :title %><br>
       <%= f.text_field :title %>
-    <h4>body</h4>
+    </div>
+    <div>
+      <%= f.label :body %><br>
       <%= f.text_area :body %><br>
+    </div>
     <%= f.submit %>
   <% end %>
