@@ -19,10 +19,10 @@
 
   <h2>New Book</h2>
   <!-- エラーメッセージ -->
-  <%= render 'error', book: @book %>
+  <%= render 'error', book: @book_new %>
   <!-- ここまで　-->
-  
-  <%= form_for @book do |f| %>
+
+  <%= form_for @book_new do |f| %>
     <div>
       <%= f.label :title %><br>
       <%= f.text_field :title %>
