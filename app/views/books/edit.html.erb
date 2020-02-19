@@ -1,5 +1,8 @@
 <h2>Editing Book</h2>
 
+<!-- エラーメッセージ -->
+<%= render 'error', book: @book %>
+
 <%= form_for @book do |f| %>
   <div>
     <%= f.label :Title %><br>

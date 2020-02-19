@@ -18,6 +18,10 @@
   </table>
 
   <h2>New Book</h2>
+  <!-- エラーメッセージ -->
+  <%= render 'error', book: @book %>
+  <!-- ここまで　-->
+  
   <%= form_for @book do |f| %>
     <div>
       <%= f.label :title %><br>
